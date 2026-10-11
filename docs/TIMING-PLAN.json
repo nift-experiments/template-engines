@@ -1,0 +1,597 @@
+{
+  "literal": {
+    "fresh_samples": 50,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 993
+      },
+      "jinja": {
+        "render": 52,
+        "reuse": 873,
+        "parse": 57
+      },
+      "nunjucks": {
+        "render": 47,
+        "reuse": 1000,
+        "parse": 66
+      },
+      "handlebars": {
+        "render": 55,
+        "reuse": 411,
+        "parse": 62
+      },
+      "liquid": {
+        "render": 188,
+        "reuse": 285,
+        "parse": 355
+      }
+    }
+  },
+  "interpolation": {
+    "fresh_samples": 50,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 670
+      },
+      "jinja": {
+        "render": 22,
+        "reuse": 748,
+        "parse": 23
+      },
+      "nunjucks": {
+        "render": 56,
+        "reuse": 813,
+        "parse": 61
+      },
+      "handlebars": {
+        "render": 19,
+        "reuse": 158,
+        "parse": 19
+      },
+      "liquid": {
+        "render": 55,
+        "reuse": 173,
+        "parse": 97
+      }
+    }
+  },
+  "condition": {
+    "fresh_samples": 50,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 364
+      },
+      "jinja": {
+        "render": 25,
+        "reuse": 853,
+        "parse": 31
+      },
+      "nunjucks": {
+        "render": 51,
+        "reuse": 1000,
+        "parse": 52
+      },
+      "handlebars": {
+        "render": 16,
+        "reuse": 281,
+        "parse": 20
+      },
+      "liquid": {
+        "render": 38,
+        "reuse": 77,
+        "parse": 105
+      }
+    }
+  },
+  "nested-object": {
+    "fresh_samples": 50,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 697
+      },
+      "jinja": {
+        "render": 25,
+        "reuse": 912,
+        "parse": 28
+      },
+      "nunjucks": {
+        "render": 53,
+        "reuse": 505,
+        "parse": 59
+      },
+      "handlebars": {
+        "render": 25,
+        "reuse": 454,
+        "parse": 25
+      },
+      "liquid": {
+        "render": 39,
+        "reuse": 91,
+        "parse": 70
+      }
+    }
+  },
+  "loop-10": {
+    "fresh_samples": 50,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 65
+      },
+      "jinja": {
+        "render": 16,
+        "reuse": 476,
+        "parse": 17
+      },
+      "nunjucks": {
+        "render": 26,
+        "reuse": 277,
+        "parse": 35
+      },
+      "handlebars": {
+        "render": 15,
+        "reuse": 142,
+        "parse": 16
+      },
+      "liquid": {
+        "render": 21,
+        "reuse": 38,
+        "parse": 84
+      }
+    }
+  },
+  "loop-100": {
+    "fresh_samples": 50,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 11
+      },
+      "jinja": {
+        "render": 16,
+        "reuse": 118,
+        "parse": 19
+      },
+      "nunjucks": {
+        "render": 22,
+        "reuse": 61,
+        "parse": 31
+      },
+      "handlebars": {
+        "render": 11,
+        "reuse": 89,
+        "parse": 16
+      },
+      "liquid": {
+        "render": 9,
+        "reuse": 10,
+        "parse": 81
+      }
+    }
+  },
+  "loop-1000": {
+    "fresh_samples": 30,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 2
+      },
+      "jinja": {
+        "render": 7,
+        "reuse": 13,
+        "parse": 18
+      },
+      "nunjucks": {
+        "render": 6,
+        "reuse": 11,
+        "parse": 32
+      },
+      "handlebars": {
+        "render": 7,
+        "reuse": 17,
+        "parse": 6
+      },
+      "liquid": {
+        "render": 2,
+        "reuse": 2,
+        "parse": 79
+      }
+    }
+  },
+  "loop-10000": {
+    "fresh_samples": 30,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 1
+      },
+      "jinja": {
+        "render": 1,
+        "reuse": 2,
+        "parse": 16
+      },
+      "nunjucks": {
+        "render": 2,
+        "reuse": 2,
+        "parse": 42
+      },
+      "handlebars": {
+        "render": 4,
+        "reuse": 4,
+        "parse": 16
+      },
+      "liquid": {
+        "render": 1,
+        "reuse": 1,
+        "parse": 64
+      }
+    }
+  },
+  "nested-loops": {
+    "fresh_samples": 50,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 7
+      },
+      "jinja": {
+        "render": 10,
+        "reuse": 60,
+        "parse": 12
+      },
+      "nunjucks": {
+        "render": 14,
+        "reuse": 30,
+        "parse": 13
+      },
+      "handlebars": {
+        "render": 12,
+        "reuse": 51,
+        "parse": 13
+      },
+      "liquid": {
+        "render": 4,
+        "reuse": 5,
+        "parse": 70
+      }
+    }
+  },
+  "includes-1": {
+    "fresh_samples": 50,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 227,
+        "files": 182
+      },
+      "jinja": {
+        "render": 18,
+        "reuse": 590,
+        "parse": 17,
+        "files": 12
+      },
+      "nunjucks": {
+        "render": 40,
+        "reuse": 195,
+        "parse": 43,
+        "files": 26
+      },
+      "handlebars": {
+        "render": 18,
+        "reuse": 181,
+        "parse": 19,
+        "files": 15
+      },
+      "liquid": {
+        "render": 35,
+        "reuse": 72,
+        "parse": 99,
+        "files": 23
+      }
+    }
+  },
+  "includes-4": {
+    "fresh_samples": 50,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 114,
+        "files": 88
+      },
+      "jinja": {
+        "render": 20,
+        "reuse": 390,
+        "parse": 18,
+        "files": 6
+      },
+      "nunjucks": {
+        "render": 38,
+        "reuse": 261,
+        "parse": 39,
+        "files": 20
+      },
+      "handlebars": {
+        "render": 19,
+        "reuse": 191,
+        "parse": 18,
+        "files": 13
+      },
+      "liquid": {
+        "render": 38,
+        "reuse": 71,
+        "parse": 94,
+        "files": 20
+      }
+    }
+  },
+  "includes-8": {
+    "fresh_samples": 50,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 62,
+        "files": 53
+      },
+      "jinja": {
+        "render": 18,
+        "reuse": 302,
+        "parse": 19,
+        "files": 3
+      },
+      "nunjucks": {
+        "render": 29,
+        "reuse": 135,
+        "parse": 31,
+        "files": 13
+      },
+      "handlebars": {
+        "render": 17,
+        "reuse": 217,
+        "parse": 18,
+        "files": 8
+      },
+      "liquid": {
+        "render": 26,
+        "reuse": 65,
+        "parse": 92,
+        "files": 10
+      }
+    }
+  },
+  "article": {
+    "fresh_samples": 50,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 40
+      },
+      "jinja": {
+        "render": 8,
+        "reuse": 373,
+        "parse": 8
+      },
+      "nunjucks": {
+        "render": 19,
+        "reuse": 233,
+        "parse": 14
+      },
+      "handlebars": {
+        "render": 8,
+        "reuse": 206,
+        "parse": 11
+      },
+      "liquid": {
+        "render": 15,
+        "reuse": 21,
+        "parse": 50
+      }
+    }
+  },
+  "collection": {
+    "fresh_samples": 30,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 1
+      },
+      "jinja": {
+        "render": 5,
+        "reuse": 7,
+        "parse": 20
+      },
+      "nunjucks": {
+        "render": 6,
+        "reuse": 7,
+        "parse": 44
+      },
+      "handlebars": {
+        "render": 9,
+        "reuse": 32,
+        "parse": 16
+      },
+      "liquid": {
+        "render": 1,
+        "reuse": 1,
+        "parse": 85
+      }
+    }
+  },
+  "many-renders-100": {
+    "fresh_samples": 30,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 9
+      },
+      "jinja": {
+        "render": 1,
+        "reuse": 17,
+        "parse": 1
+      },
+      "nunjucks": {
+        "render": 3,
+        "reuse": 84,
+        "parse": 3
+      },
+      "handlebars": {
+        "render": 2,
+        "reuse": 32,
+        "parse": 2
+      },
+      "liquid": {
+        "render": 4,
+        "reuse": 11,
+        "parse": 7
+      }
+    }
+  },
+  "many-renders-1000": {
+    "fresh_samples": 30,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 1
+      },
+      "jinja": {
+        "render": 1,
+        "reuse": 2,
+        "parse": 1
+      },
+      "nunjucks": {
+        "render": 1,
+        "reuse": 12,
+        "parse": 1
+      },
+      "handlebars": {
+        "render": 1,
+        "reuse": 6,
+        "parse": 1
+      },
+      "liquid": {
+        "render": 1,
+        "reuse": 2,
+        "parse": 2
+      }
+    }
+  },
+  "many-templates-10": {
+    "fresh_samples": 30,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 42
+      },
+      "jinja": {
+        "render": 4,
+        "reuse": 160,
+        "parse": 4
+      },
+      "nunjucks": {
+        "render": 17,
+        "reuse": 341,
+        "parse": 20
+      },
+      "handlebars": {
+        "render": 10,
+        "reuse": 220,
+        "parse": 10
+      },
+      "liquid": {
+        "render": 28,
+        "reuse": 72,
+        "parse": 56
+      }
+    }
+  },
+  "many-templates-100": {
+    "fresh_samples": 30,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 10
+      },
+      "jinja": {
+        "render": 1,
+        "reuse": 18,
+        "parse": 1
+      },
+      "nunjucks": {
+        "render": 3,
+        "reuse": 50,
+        "parse": 3
+      },
+      "handlebars": {
+        "render": 2,
+        "reuse": 22,
+        "parse": 2
+      },
+      "liquid": {
+        "render": 5,
+        "reuse": 13,
+        "parse": 8
+      }
+    }
+  },
+  "many-templates-1000": {
+    "fresh_samples": 30,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 1
+      },
+      "jinja": {
+        "render": 1,
+        "reuse": 2,
+        "parse": 1
+      },
+      "nunjucks": {
+        "render": 1,
+        "reuse": 6,
+        "parse": 1
+      },
+      "handlebars": {
+        "render": 1,
+        "reuse": 3,
+        "parse": 1
+      },
+      "liquid": {
+        "render": 2,
+        "reuse": 2,
+        "parse": 2
+      }
+    }
+  },
+  "transform": {
+    "fresh_samples": 50,
+    "persistent_samples": 50,
+    "batch": {
+      "nift": {
+        "render": 358
+      },
+      "jinja": {
+        "render": 23,
+        "reuse": 926,
+        "parse": 30
+      },
+      "nunjucks": {
+        "render": 67,
+        "reuse": 1000,
+        "parse": 73
+      },
+      "handlebars": {
+        "render": 23,
+        "reuse": 349,
+        "parse": 20
+      },
+      "liquid": {
+        "render": 22,
+        "reuse": 79,
+        "parse": 74
+      }
+    }
+  }
+}

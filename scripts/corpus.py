@@ -71,6 +71,8 @@ def main():
  for count in (100,1000):add('many-renders-'+str(count),[V('d.title'),T('|'),V('d.count')],renders=count)
  for count in (10,100,1000):add('many-templates-'+str(count),[T('<p>'),V('d.title'),T('</p>')],distinct=count)
  add('transform',[('upper','d.title')])
+ add('raw-special-values',[V('d.title')],dict(base,title="<&>\"' @input('untrusted') $[evil]"))
+ cases[-1]['semantic_only']=True
  (R/'corpus/manifest.json').write_text(json.dumps(cases,indent=2)+'\n')
  files={str(p.relative_to(R)):hashlib.sha256(p.read_bytes()).hexdigest() for p in (R/'corpus').rglob('*') if p.is_file()}
  (R/'docs/CORPUS-HASHES.json').write_text(json.dumps(files,indent=2)+'\n')

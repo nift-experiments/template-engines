@@ -138,5 +138,13 @@
     "distinct": 1,
     "output_bytes": 13,
     "partials": 0
+  },
+  {
+    "name": "raw-special-values",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 34,
+    "partials": 0,
+    "semantic_only": true
   }
 ]
