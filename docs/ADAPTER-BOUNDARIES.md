@@ -16,3 +16,5 @@ Repeated-render scenarios alternate two datasets and check every output. Single-
 Persistent rows are amortized per engine operation, not per batch. Fresh rows are complete invocation totals; many-render fresh calls contain all requested renders, while persistent many-render values divide by render count. Tables/charts preserve this distinction.
 
 Persistent memory is one maximum-process RSS observation over the whole worker lifetime, including preload, preparation, batched outputs and validation. It is diagnostic and is not pooled with per-fresh-invocation child RSS distributions. CPU times for persistent workers also cover that lifetime; they are not claimed as engine-only CPU time.
+
+Fresh adapters preload both frozen data variants and all templates belonging to that scenario, then render the requested workload. Single-render cells consequently load an unused second data variant. This same explicit harness work occurs for every participant; totals describe these reproducible adapters, not a hand-tuned minimal single-request executable. Persistent values exclude that preload. Broad startup/throughput claims should respect this qualification.
