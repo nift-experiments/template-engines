@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "cells": 375,
+  "measured_observations": 17950,
+  "warmup_observations": 750,
+  "timed_engine_operations": 6081550,
+  "retained_observations": 18700,
+  "exact_corpus_hashes_verified": 5790,
+  "no_outlier_removal": true,
+  "unsupported_nift_modes": [
+    "parse-only",
+    "prepared-AST reuse"
+  ]
+}

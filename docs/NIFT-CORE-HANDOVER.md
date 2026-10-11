@@ -17,3 +17,11 @@ Reproduce: compile with the pinned libnift_c.a and headers as in scripts/build.s
 Use the frozen loop-10 through loop-10000 corpus with adapters/nift.cpp. Contrast literal with large Context, nested-field interpolation and actual record rendering. Profile parser/evaluator, lookup, allocation and output growth before attributing all overhead to reparsing. Do not infer an asymptotic explanation from four benchmark points alone.
 
 The experiment workspace does not modify core. Diagnostic values are distinct from official observations and must not be pooled.
+
+## Observed separate diagnostic
+
+A 10,000-record request Context with literal output cost 3.641258 ms/render median; the equivalent engine-default binding cost 0.002193 ms. This isolates unconditional request-binding copying in this API path. The official 10,000-record loop cost 113.578 ms, so context copying alone explains only a small part; parser/lookup/loop execution remains to be profiled. Static defaults are not a substitute for request-specific values. Two warmups and ten 100-render samples are retained for each diagnostic cell.
+
+## Separate software CPU profile
+
+A 99 Hz cpu-clock/DWARF profile of 22 large-loop renders captured 254 samples with zero lost samples. It shows parser/expression paths, string comparison and allocation activity. This short sample profile is diagnostic, not a precise decomposition or a proof that one function causes the whole gap. Raw perf data, decoded report, render samples and binary SHA-256 identities are retained separately from official observations. Next core work should isolate loop-body parsing and value lookup before optimizing.
