@@ -32,7 +32,7 @@ def main():
       rotated=engines[round%len(engines):]+engines[:round%len(engines)]
       for eng in rotated:
        p=workers[eng];p.stdin.write('go\n');p.stdin.flush();line=p.stdout.readline();assert line,('worker failed',case['name'],eng,mode)
-       row=json.loads(line);assert row['sample']==round;row.update(engine=eng,case=case['name'],mode='source-reuse' if eng=='nift' and mode=='render' else mode);records.write(json.dumps(row)+'\n');records.flush()
+       row=json.loads(line);assert row['sample']==round;row.update(expected_output_sha256=hashlib.sha256(oracle).hexdigest() if mode!='parse' else None,all_rendered_outputs_exactly_checked=mode!='parse',engine=eng,case=case['name'],mode='source-reuse' if eng=='nift' and mode=='render' else mode);records.write(json.dumps(row)+'\n');records.flush()
      for eng,p in workers.items():
       _,status,usage=os.wait4(p.pid,0);p.returncode=os.waitstatus_to_exitcode(status);assert p.returncode==0,(eng,case['name'],mode)
       with (output/'worker-lifetimes.jsonl').open('a') as memory:memory.write(json.dumps({'engine':eng,'case':case['name'],'mode':'source-reuse' if eng=='nift' and mode=='render' else mode,'max_process_rss_mib':usage.ru_maxrss/1024,'cpu_user_s':usage.ru_utime,'cpu_system_s':usage.ru_stime,'scope':'Whole persistent worker lifetime: runtime, preload, preparation, timed batches, retained outputs and correctness validation'})+'\n')
