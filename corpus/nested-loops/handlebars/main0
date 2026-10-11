@@ -1,0 +1,1 @@
+{{#each d.categories}}<section>{{{this.name}}}{{#each this.records}}<li>{{{this.id}}}:{{{this.name}}}</li>{{/each}}</section>{{/each}}

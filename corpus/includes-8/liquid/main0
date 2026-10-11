@@ -1,0 +1,1 @@
+<header>{{ d.title }}</header>{% include 'p0' %}<footer>{{ d.author.name }}</footer>

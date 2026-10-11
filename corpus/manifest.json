@@ -1,0 +1,142 @@
+[
+  {
+    "name": "literal",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 25,
+    "partials": 0
+  },
+  {
+    "name": "interpolation",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 20,
+    "partials": 0
+  },
+  {
+    "name": "condition",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 8,
+    "partials": 0
+  },
+  {
+    "name": "nested-object",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 18,
+    "partials": 0
+  },
+  {
+    "name": "loop-10",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 199,
+    "partials": 0
+  },
+  {
+    "name": "loop-100",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 2089,
+    "partials": 0
+  },
+  {
+    "name": "loop-1000",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 22789,
+    "partials": 0
+  },
+  {
+    "name": "loop-10000",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 247789,
+    "partials": 0
+  },
+  {
+    "name": "nested-loops",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 3890,
+    "partials": 0
+  },
+  {
+    "name": "includes-1",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 79,
+    "partials": 1
+  },
+  {
+    "name": "includes-4",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 124,
+    "partials": 4
+  },
+  {
+    "name": "includes-8",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 184,
+    "partials": 8
+  },
+  {
+    "name": "article",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 5337,
+    "partials": 0
+  },
+  {
+    "name": "collection",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 55780,
+    "partials": 0
+  },
+  {
+    "name": "many-renders-100",
+    "renders": 100,
+    "distinct": 1,
+    "output_bytes": 15,
+    "partials": 0
+  },
+  {
+    "name": "many-renders-1000",
+    "renders": 1000,
+    "distinct": 1,
+    "output_bytes": 15,
+    "partials": 0
+  },
+  {
+    "name": "many-templates-10",
+    "renders": 1,
+    "distinct": 10,
+    "output_bytes": 20,
+    "partials": 0
+  },
+  {
+    "name": "many-templates-100",
+    "renders": 1,
+    "distinct": 100,
+    "output_bytes": 20,
+    "partials": 0
+  },
+  {
+    "name": "many-templates-1000",
+    "renders": 1,
+    "distinct": 1000,
+    "output_bytes": 20,
+    "partials": 0
+  },
+  {
+    "name": "transform",
+    "renders": 1,
+    "distinct": 1,
+    "output_bytes": 13,
+    "partials": 0
+  }
+]

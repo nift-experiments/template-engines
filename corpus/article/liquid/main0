@@ -1,0 +1,1 @@
+<article><h1>{{ d.title }}</h1><nav>{% for item in d.links %}<a href="{{ item.url }}">{{ item.name }}</a>{% endfor %}</nav>{% if d.featured %}<strong>Featured</strong>{% else %}{% endif %}{% for item in d.sections %}<section><h2>{{ item.name }}</h2><p>{{ item.body }}</p></section>{% endfor %}<footer>{{ d.author.name }}</footer></article>

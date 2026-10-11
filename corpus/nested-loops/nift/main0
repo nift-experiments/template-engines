@@ -1,0 +1,1 @@
+@for(cat : d.categories){<section>$[cat.name]@for(item : cat.records){<li>$[item.id]:$[item.name]</li>}</section>}

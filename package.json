@@ -1,0 +1,28 @@
+{
+  "name": "template-engines",
+  "version": "1.0.0",
+  "description": "Nift as a template engine, independently of tracked builds and whole-site generation. Five engines: Nift embedded C++, Jinja2, Nunjucks, Handlebars, LiquidJS. Canonical evidence is published in nift-experiments/lab-evidence; Labs receives compact summary statistics and displayed charts only.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nift-experiments/template-engines.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nift-experiments/template-engines/issues"
+  },
+  "homepage": "https://github.com/nift-experiments/template-engines#readme",
+  "dependencies": {
+    "handlebars": "4.7.10",
+    "liquidjs": "10.30.0",
+    "nunjucks": "3.2.4"
+  }
+}

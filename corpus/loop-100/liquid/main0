@@ -1,0 +1,1 @@
+<ul>{% for item in d.records %}<li>{{ item.id }}:{{ item.name }}</li>{% endfor %}</ul>

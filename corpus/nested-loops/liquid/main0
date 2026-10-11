@@ -1,0 +1,1 @@
+{% for cat in d.categories %}<section>{{ cat.name }}{% for item in cat.records %}<li>{{ item.id }}:{{ item.name }}</li>{% endfor %}</section>{% endfor %}

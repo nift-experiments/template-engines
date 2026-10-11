@@ -1,0 +1,1 @@
+{% if d.featured %}featured{% else %}ordinary{% endif %}

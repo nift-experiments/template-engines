@@ -1,0 +1,1 @@
+<ul>{{#each d.records}}<li>{{{this.id}}}:{{{this.name}}}</li>{{/each}}</ul>

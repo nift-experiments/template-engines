@@ -1,0 +1,17 @@
+{
+  "nift_source": "30d17733742132a1e474ce90ee4f5bee4a8bce06",
+  "nift_version": "4.11.0 source snapshot",
+  "jinja2": "3.1.6",
+  "markupsafe": "3.0.4",
+  "nunjucks": "3.2.4",
+  "handlebars": "4.7.10",
+  "liquidjs": "10.30.0",
+  "selection": "Five architectural contrasts; Go omitted to keep campaign bounded",
+  "sources": [
+    "https://github.com/pallets/jinja/releases",
+    "https://www.npmjs.com/package/nunjucks",
+    "https://www.npmjs.com/package/handlebars",
+    "https://www.npmjs.com/package/liquidjs",
+    "https://nift.dev/docs/templating.html"
+  ]
+}
