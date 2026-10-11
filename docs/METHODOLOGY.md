@@ -1,0 +1,15 @@
+# Protocol and participant selection
+
+Nift exposes standalone Engine::render_text/render_path with Context values and a custom include loader. This avoids tracked builds, project discovery, CLI configuration, dependency persistence and output-file writing in the persistent boundary. Its public API has no parse-only or prepared-AST handle: these cells are unavailable. Source reuse with a persistent Engine reparses and must not be called prepared-AST reuse.
+
+Jinja2 is the Python architectural contrast; Nunjucks a general JS engine; Handlebars the compiled-function/logic-light model; LiquidJS a constrained template interpreter. Five participants provide the requested contrasts. Go is excluded to keep implementation/audit effort bounded, not because equivalence is impossible. Exact pinned versions are recorded before suite freeze.
+
+Fresh invocation: parent wall clock around process creation, runtime/module startup, template/data loading, engine creation, rendering and complete stdout capture. Collect child user/system CPU and maximum-child RSS via wait4; sequential children only. Linux ru_maxrss KiB converted to MiB. This is not engine-only speed.
+
+Persistent: engine/module/data loading outside the timer. Measure parse-only where publicly supported; parse-plus-render; prepared-template render with alternating preloaded data where supported. Nift source-reuse is distinct. Include registration/loading and application context marshalling boundaries are documented per adapter. File-backed parse-plus-render includes top-level and partial reads; no filesystem cache flush is claimed.
+
+Every completed render must match independently generated exact expected bytes, including changing-data variants. Correctness hashing/comparison occurs after timed batches, with every output validated; validation bookkeeping outside the timer. Warmups are retained separately. No outlier removal. Rotating engines per round, same node, single CPU affinity. Batch fast operations toward measurable sample durations using locally frozen counts; retain counts and amortized/per-operation values. Report medians, p95, min/max and sample count. Never pool fresh and persistent or incompatible memory scopes.
+
+Corpus includes literal, scalar/nested interpolation, conditions, loop sizes 10/100/1000/10000, nested loops, composition depth 1/4/8, article, collection, repeated new-data renders 100/1000, distinct templates 10/100/1000 and equivalent case conversion. HTML escaping is a separate exact-byte semantic gate. No transformations hidden outside one engine and timed inside another. Data generation/oracles do not use participant templates.
+
+Local acceptance before cloud: install reproducibility, every supported cell correct, malformed-template error test, changing-data checks, timing feasibility and runtime budget. Freeze source/templates/data/output/tool identities and suite SHA. All official observations, warmups, rejected attempts and environments go in ignored work/ then canonical evidence. Diagnostics are separate; never optimize Nift core here.
