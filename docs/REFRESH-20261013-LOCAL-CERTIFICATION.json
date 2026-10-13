@@ -1,0 +1,14 @@
+{
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "scope": "local correctness only; no official measurements",
+  "pass": true,
+  "supported_cells": 393,
+  "semantic_gates": 10,
+  "variant_gates": 20,
+  "candidate_cli_sha256": "f13f0b5c99afa3c4afa320d33cad88f0819d3fad384dc3a6d51364d79206e11e",
+  "candidate_library_sha256": "b40cf91f257c51820a10f4b683f44352174d88b763da0fce6735e6a93e462cbf",
+  "adapter_sha256": "e84b7706cefa46515b55cc443706e6a472333a3ee51c3bb797b7bb2286e8dd76",
+  "node_version": "v22.22.1",
+  "prepared_api": "No public prepare/Prepared member in pinned include/nift/engine.h; source-reuse retained, parsed/prepared Nift boundary remains unavailable",
+  "receipt_directory": "/tmp/runtime-suite-refresh-certification/template-engines/work"
+}
